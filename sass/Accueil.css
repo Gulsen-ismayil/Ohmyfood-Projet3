@@ -410,4 +410,118 @@ footer #footer__block .footer__contact {
   color: white;
   cursor: pointer;
 }
+
+@media all and (min-width: 768px) {
+  #section__explorer button {
+    width: 40%;
+    font-size: 18px;
+  }
+  #fonctionnement h3 {
+    text-align: center;
+  }
+  #fonctionnement #parent__block__fonction .block__fonction {
+    width: 45%;
+  }
+  #fonctionnement #parent__block__fonction .block__fonction span {
+    left: -3%;
+  }
+  #fonctionnement #parent__block__fonction .block__fonction p {
+    font-size: 18px;
+  }
+  #restaurants h3 {
+    text-align: center;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants {
+    width: 60%;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants .nouveau {
+    left: 78%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  header {
+    height: 100px;
+  }
+  header #logo {
+    width: 230px;
+    height: 50px;
+  }
+  #location p {
+    font-size: 20px;
+  }
+  #location .fa-map-marker-alt {
+    font-size: 20px;
+  }
+  #section__explorer .explorer__title {
+    font-size: 28px;
+  }
+  #section__explorer p {
+    font-size: 22px;
+  }
+  #section__explorer button {
+    width: 37%;
+    font-size: 22px;
+  }
+  #fonctionnement h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+  #fonctionnement #parent__block__fonction .block__fonction {
+    width: 37%;
+    border-radius: 30px;
+  }
+  #fonctionnement #parent__block__fonction .block__fonction span {
+    margin-left: 1%;
+  }
+  #fonctionnement #parent__block__fonction .block__fonction p {
+    font-size: 22px;
+  }
+  #restaurants h3 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  #restaurants #parent__block__restaurants {
+    padding-left: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px 80px;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants {
+    width: 45%;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants .img__restau {
+    height: 300px;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants .nouveau {
+    width: 92px;
+    height: 35px;
+    left: 76%;
+    font-size: 16px;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants .description__restaurants {
+    line-height: 30px;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants .description__restaurants h4 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #restaurants #parent__block__restaurants .block__restaurants .description__restaurants p {
+    font-size: 18px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .footer__block__icon {
+    padding-left: 45%;
+  }
+}
 /*# sourceMappingURL=Accueil.css.map */
