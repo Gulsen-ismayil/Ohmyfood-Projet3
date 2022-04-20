@@ -305,3 +305,86 @@ footer {
   }
 }
 
+
+
+// tablette-------------------------------------------------------------------------------------------
+// tablette-------------------------------------------------------------------------------------------
+
+@media all and (min-width: 768px) {
+
+  header {
+    #logo {
+      width: 250px;
+      height: 45px;
+    }
+  }
+  
+  #img__restau {
+    padding-top: 2%;
+  }
+  
+  #menus__container {
+    & #menus__container__title {
+      & i {
+        padding-top: 1%;
+        left: 70%;
+      }
+    }
+  }
+  
+  #menus {
+    & #menus__entree, & #menus__plats, & #menus__desserts {
+      margin: auto;
+      width: 70%;
+    }
+  }
+  
+  button {
+    width: 25%;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 37%;
+  }
+  
+  
+  }
+  
+  
+  // desktop-----------------------------------------------------------------------------------------
+  // desktop-----------------------------------------------------------------------------------------
+  @media all and (min-width: 1024px) {
+  
+    header {
+      & .arrow__left {
+        font-size: 25px;
+      }
+    }
+    #menus__container {
+      & #menus__container__title {
+        font-size: 24px;
+        & i {
+          font-size: 28px;
+        }
+      }
+    }
+    #menus {
+      flex-direction: initial;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+      & #menus__entree, & #menus__plats, & #menus__desserts {
+        width: 45%;
+        padding-bottom: 5%;
+      }
+    }
+  
+    button {
+      width: 25%;
+      height: 45px;
+      font-size: 20px;
+      margin-left:0 40% 0 0;
+    }
+  
+  
+  
+  }
+  
