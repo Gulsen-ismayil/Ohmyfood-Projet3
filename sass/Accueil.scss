@@ -1,0 +1,320 @@
+// ----------mobile------------------------------------------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// root
+$font-roboto:'Roboto', sans-serif;
+$font-Shrikhand:'Shrikhand', cursive;
+$color-primaire:#9356DC;
+$color-secondaire:#FF79DA;
+$color-tertiaire:#99E2D0;
+$bg-color:rgba(217, 221, 217, 0.445);
+
+// @mixin------
+@mixin btncolor ($color) {
+  background: linear-gradient(175deg, $color-secondaire, $color-primaire);
+  box-shadow: 3px 3px 10px $color;
+}
+
+@mixin btnhover($color) {
+  box-shadow: 3px 3px 10px $color;
+  opacity: .9;
+}
+
+
+body {
+  background-color:$bg-color;
+  font-family: $font-roboto;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+// loader
+
+.loader {
+  position: fixed;
+  background-color:#FFF;
+  width: 100%;
+  height: 100%;
+  // inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .9;
+  animation: dissappear 50ms 3s forwards;
+  &:after {
+    content: '';
+    border-right: 5px solid transparent;
+    border-top: 5px solid $color-primaire;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s infinite linear;
+  }
+}
+
+@keyframes dissappear  {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+// header
+
+header {
+  background-color: white;
+  box-shadow: 0 3px 5px rgb(206, 205, 205);
+  display: flex;
+  justify-content: center;
+  height: 85px;
+  & #logo {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+  }
+}
+
+// location
+
+#location {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & p {
+    margin-left: 10px;
+  }
+  & .fa-map-marker-alt {
+    font-size: 18px;
+  } 
+}
+
+//  explorer restaurants
+
+#section__explorer {
+  background-color:rgba(246, 246, 246, 0.674);
+  padding: 50px 50px 70px;
+  text-align:center;
+  & .explorer__title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  & p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  & button {
+    @include btncolor(rgb(146, 125, 146));
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 95%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    &:hover {
+      @include btnhover(rgb(48, 45, 48));
+    }
+  }
+}
+
+// section fonctionnement
+
+#fonctionnement {
+  background-color: rgba(252, 255, 255, 0.641);
+  
+  & h3 {
+    font-size: 25px;
+    padding: 50px 20px 20px;
+  }
+  & #parent__block__fonction {
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    & .block__fonction {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:rgba(250, 253, 253, 0.884) ;
+      width: 85%;
+      height: 70px;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgb(224, 225, 225);
+      position: relative;
+      & span {
+        background-color: $color-primaire;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        left: -2%;
+      }
+      & i {
+        font-size: 18px;
+        color: grey;
+        margin-left: 40px;
+      }
+      & p {
+        margin-left: 40px;
+      }
+    }
+    & .block__fonction-degustez {
+      background-color: rgb(240, 232, 247);
+      & .fa-store {
+        color: $color-primaire;
+      }
+    }
+  }
+}
+
+// section restaurant
+
+#restaurants {
+  background-color: rgba(246, 246, 246, 0.674);
+  & h3 {
+    font-size: 25px;
+    padding: 50px 20px 20px;
+  }
+  & #parent__block__restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    & .block__restaurants {
+      background-color: white;
+      width: 90%;
+      border-radius: 13px;
+      margin-bottom: 30px;
+      position: relative;
+      & .img__restau {
+        border-radius:20px 20px 0 0;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      & .nouveau {
+        background-color: $color-tertiaire;
+        border-radius: 3px;
+        width: 80px;
+        height: 28px;
+        font-size: 15px;
+        color: #048a68;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 74%;
+        top: 6%;  
+      }
+      & .description__restaurants {
+        padding: 10px 15px 10px 10px;
+        cursor: pointer;
+        line-height: 25px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        & h4 {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        & i {
+          font-size: 25px;
+          position: absolute;
+          left: 88%;
+        }
+        & .fas {
+          color: transparent;
+          transition: all 500ms;
+          &:hover {
+            background: linear-gradient(175deg, $color-secondaire, $color-primaire);
+            background-clip: text;
+            -webkit-background-clip: text;
+            transform: scale(1.1);
+            animation: fahover 1s linear;
+            @keyframes fahover {
+              0% {
+                color: #FF79DA;
+              }
+              30% {
+                color: #dd08d6;
+              }
+              60% {
+                color: #aa2ae5;
+              }
+              100% {
+                color: linear-gradient(175deg, $color-secondaire, $color-primaire);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer--------------------------
+
+footer {
+  background-color: rgb(78, 76, 78);
+  color: white;
+  height: 30vh;
+  padding: 30px 30px;
+  & #footer__title {
+    font-size: 25px;
+    font-family: $font-Shrikhand;
+    padding-bottom: 20px;
+  }
+  & #footer__block {
+    line-height: 30px;
+    & .footer__block__icon {
+      display: flex;
+      i {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+      }
+      & p {
+        padding-left: 10px;
+        font-size: 17px;
+      }
+    }
+    & .footer__contact {
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+
