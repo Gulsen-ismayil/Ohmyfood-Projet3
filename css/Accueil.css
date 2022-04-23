@@ -294,7 +294,7 @@ header #logo {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 74%;
+  left: 290px;
   top: 6%;
 }
 
@@ -485,10 +485,12 @@ footer #footer__block .footer__contact {
     padding-bottom: 30px;
   }
   #restaurants #parent__block__restaurants {
-    padding-left: 3%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: initial;
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
@@ -498,7 +500,7 @@ footer #footer__block .footer__contact {
     gap: 30px 30px;
   }
   #restaurants #parent__block__restaurants .block__restaurants {
-    width: 35%;
+    width: 40%;
   }
   #restaurants #parent__block__restaurants .block__restaurants .img__restau {
     height: 300px;
