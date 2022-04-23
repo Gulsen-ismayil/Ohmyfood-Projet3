@@ -231,7 +231,7 @@ header {
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 74%;
+        left: 290px;
         top: 6%;  
       }
       & .description__restaurants {
@@ -428,13 +428,13 @@ footer {
       padding-bottom: 30px;
     }
     & #parent__block__restaurants {
-      padding-left:3%;
       display: flex;
+      justify-content: center;
       flex-direction: initial;
       flex-wrap: wrap;
-      gap: 40px 80px;
+      gap: 30px 30px;
       & .block__restaurants {
-        width: 45%;
+        width: 40%;
         & .img__restau {
           height: 300px;
         }
