@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 20px 10px 20px;
+}
+
+header .arrow__left {
+  font-size: 23px;
+  padding-top: 8px;
+  color: black;
+}
+
+header #logo {
+  width: 200px;
+  height: 40px;
+  margin: auto;
+}
+
+#img__restau {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+#menus__container {
+  border-radius: 40px;
+  background-color: whitesmoke;
+  margin-top: -70px;
+}
+
+#menus__container #menus__container__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10%;
+  font-size: 20px;
+  font-family: 'shrikhand', cursive;
+}
+
+#menus__container #menus__container__title i {
+  font-size: 25px;
+  padding-top: 3%;
+  position: absolute;
+  left: 85%;
+}
+
+#menus__container #menus__container__title .fas {
+  color: transparent;
+  -webkit-transition: all 500ms  ease-in-out;
+  transition: all 500ms  ease-in-out;
+}
+
+#menus__container #menus__container__title .fas:hover {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transform: translateY(-2%) scale(1.2);
+          transform: translateY(-2%) scale(1.2);
+  -webkit-animation: fahover 1s linear;
+          animation: fahover 1s linear;
+}
+
+@-webkit-keyframes fahover {
+  0% {
+    color: #FF79DA;
+  }
+  30% {
+    color: #dd08d6;
+  }
+  60% {
+    color: #aa2ae5;
+  }
+  100% {
+    background-image: linear-gradient(175deg, #FF79DA, #9356DC);
+  }
+}
+
+@keyframes fahover {
+  0% {
+    color: #FF79DA;
+  }
+  30% {
+    color: #dd08d6;
+  }
+  60% {
+    color: #aa2ae5;
+  }
+  100% {
+    background-image: linear-gradient(175deg, #FF79DA, #9356DC);
+  }
+}
+
+#menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10% 0;
+  -webkit-transform-origin: 50% top;
+          transform-origin: 50% top;
+}
+
+#menus .menus__title {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 2%;
+  margin-left: 20px;
+}
+
+#menus .menus__cards {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 10px #dfdcdc;
+          box-shadow: 3px 3px 10px #dfdcdc;
+  margin: 5%;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#menus .menus__cards .menus__text {
+  line-height: 30px;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#menus .menus__cards .menus__text .menus__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#menus .menus__cards .menus__text .menus__compagne {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  text-align: left;
+}
+
+#menus .menus__cards .price {
+  margin-left: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
+}
+
+#menus .menus__cards .check {
+  background-color: #99E2D0;
+  width: 70px;
+  margin-right: -70px;
+  border-radius: 0 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#menus .menus__cards .check .fa-check {
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
+  position: relative;
+  color: #99E2D0;
+}
+
+#menus .menus__cards .check .fa-check:before {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#menus .menus__cards:hover .check {
+  margin-right: 0;
+}
+
+#menus .menus__cards:hover .fa-check {
+  -webkit-animation: spin 500ms;
+          animation: spin 500ms;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+#menus #menus__entree {
+  text-align: center;
+  -webkit-animation: entree 1000ms 500ms forwards;
+          animation: entree 1000ms 500ms forwards;
+  opacity: 0;
+}
+
+#menus #menus__plats {
+  text-align: center;
+  -webkit-animation: plats 1000ms 1000ms forwards;
+          animation: plats 1000ms 1000ms forwards;
+  opacity: 0;
+}
+
+#menus #menus__desserts {
+  text-align: center;
+  -webkit-animation: desserts 1000ms 1500ms forwards;
+          animation: desserts 1000ms 1500ms forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes entree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes entree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes plats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes desserts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 3px 3px 10px #927d92;
+          box-shadow: 3px 3px 10px #927d92;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 35%;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 4% 32% 12% 33%;
+}
+
+button:hover {
+  -webkit-box-shadow: 3px 3px 10px #302d30;
+          box-shadow: 3px 3px 10px #302d30;
+  opacity: .9;
+}
+
+footer {
+  background-color: #4e4c4e;
+  color: white;
+  height: 30vh;
+  padding: 30px 30px;
+}
+
+footer #footer__title {
+  font-size: 25px;
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 20px;
+}
+
+footer #footer__block {
+  line-height: 30px;
+}
+
+footer #footer__block .footer__block__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #footer__block .footer__block__icon i {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer__block .footer__block__icon p {
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+footer #footer__block .footer__contact {
+  color: white;
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  header #logo {
+    width: 250px;
+    height: 45px;
+  }
+  #img__restau {
+    padding-top: 2%;
+  }
+  #menus__container #menus__container__title i {
+    padding-top: 1%;
+    left: 70%;
+  }
+  #menus #menus__entree, #menus #menus__plats, #menus #menus__desserts {
+    margin: auto;
+    width: 70%;
+  }
+  button {
+    width: 25%;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 37%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  header .arrow__left {
+    font-size: 25px;
+  }
+  #menus__container #menus__container__title {
+    font-size: 24px;
+  }
+  #menus__container #menus__container__title i {
+    font-size: 28px;
+  }
+  #menus {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  #menus #menus__entree, #menus #menus__plats, #menus #menus__desserts {
+    width: 45%;
+    padding-bottom: 5%;
+  }
+  #menus #menus__plats {
+    margin-top: 0;
+  }
+  button {
+    width: 25%;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 37%;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */
