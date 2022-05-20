@@ -52,18 +52,17 @@ header #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding-top: 10%;
-  font-size: 20px;
-  font-family: 'shrikhand', cursive;
+  padding-left: 10%;
+  font-size: 17px;
+  font-family: "Shrikhand", cursive;
 }
 
 #menus__container #menus__container__title i {
-  font-size: 25px;
+  font-size: 22px;
   padding-top: 3%;
   position: absolute;
-  left: 85%;
+  right: 8%;
 }
 
 #menus__container #menus__container__title .fas {
@@ -127,9 +126,8 @@ header #logo {
 
 #menus .menus__title {
   font-size: 18px;
-  font-weight: bold;
   border-bottom: 3px solid #99E2D0;
-  width: 40px;
+  width: 49px;
   padding-bottom: 2%;
   margin-left: 20px;
 }
@@ -148,25 +146,26 @@ header #logo {
 }
 
 #menus .menus__cards .menus__text {
-  line-height: 30px;
+  line-height: 27px;
   padding: 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  width: 75%;
 }
 
 #menus .menus__cards .menus__text .menus__name {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
 }
 
 #menus .menus__cards .menus__text .menus__compagne {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
 }
 
@@ -329,11 +328,13 @@ button {
   border: none;
   color: white;
   cursor: pointer;
-  width: 35%;
+  width: 45%;
   height: 40px;
   border-radius: 30px;
   font-size: 18px;
-  margin: 4% 32% 12% 33%;
+  margin: 4% 23% 12% 28%;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 button:hover {

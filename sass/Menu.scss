@@ -67,15 +67,15 @@ header {
   margin-top: -70px;
   & #menus__container__title {
     display: flex;
-    justify-content: space-around;
     padding-top: 10%;
-    font-size: 20px;
-    font-family: 'shrikhand', cursive;
+    padding-left: 10%;
+    font-size: 17px;
+    font-family: $font-Shrikhand;
     & i {
-      font-size: 25px;
+      font-size: 22px;
       padding-top: 3%;
       position: absolute;
-      left: 85%;
+      right: 8%;
     }
     & .fas {
       color: transparent;
@@ -114,9 +114,8 @@ header {
   transform-origin: 50% top;
   & .menus__title {
     font-size: 18px;
-    font-weight: bold;
     border-bottom: 3px solid $color-tertiaire ;
-    width: 40px;
+    width: 49px;
     padding-bottom: 2%;
     margin-left: 20px;
   }
@@ -131,22 +130,23 @@ header {
     display: flex;
     overflow: hidden;
     & .menus__text{
-      line-height: 30px;
+      line-height: 27px;
       padding: 10px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      width: 75%;
       & .menus__name{
       overflow: hidden;
       text-overflow: ellipsis;
       text-align: left;
-      font-size: 20px;
+      font-size: 19px;
       font-weight: bold;
       }
       & .menus__compagne {
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: 18px;
+      font-size: 17px;
       text-align: left;
       }
     }
@@ -261,11 +261,12 @@ button {
   border: none;
   color: white;
   cursor: pointer;
-  width: 35%;
+  width: 45%;
   height: 40px;
   border-radius: 30px;
   font-size: 18px;
-  margin: 4% 32% 12% 33%;
+  margin: 4% 23% 12% 28%;
+  transition: 2s;
   &:hover {
     @include btnhover(rgb(48, 45, 48));
   }
