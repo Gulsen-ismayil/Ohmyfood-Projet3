@@ -124,11 +124,23 @@ header {
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgb(223, 220, 220);
     margin: 5%;
-    // padding: 0;
-    // width: 90%;
     height: 75px; 
     display: flex;
     overflow: hidden;
+    // transition: all 1000ms ease-in-out 500ms;
+    // &:focus {
+    //   transform: translateY(-2vh);
+    // }
+    animation: cards 1000ms forwards 800ms;
+    @keyframes cards {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-1vh);
+      }
+    }
+    
     & .menus__text{
       line-height: 27px;
       padding: 10px;

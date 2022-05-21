@@ -143,6 +143,30 @@ header #logo {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  -webkit-animation: cards 1000ms forwards 800ms;
+          animation: cards 1000ms forwards 800ms;
+}
+
+@-webkit-keyframes cards {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
+}
+
+@keyframes cards {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
 }
 
 #menus .menus__cards .menus__text {
