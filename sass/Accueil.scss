@@ -129,10 +129,10 @@ header {
     border: none;
     color: white;
     cursor: pointer;
-    width: 95%;
+    width: 250px;
     height: 50px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 17px;
     transition: 2s;
     &:hover {
       @include btnhover(rgb(48, 45, 48));
@@ -157,7 +157,7 @@ header {
     & .block__fonction {
       display: flex;
       align-items: center;
-      justify-content: center;
+      // justify-content: center;
       background-color:rgba(250, 253, 253, 0.884) ;
       width: 85%;
       height: 70px;
@@ -183,7 +183,8 @@ header {
         margin-left: 40px;
       }
       & p {
-        margin-left: 40px;
+        margin-left: 25px;
+        font-size: 17px;
       }
     }
     & .block__fonction-degustez {
