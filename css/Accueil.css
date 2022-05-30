@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+.textdescription-hidden {
+  visibility: hidden;
+  width: 0%;
+}
+
 .loader {
   position: fixed;
   background-color: #FFF;
